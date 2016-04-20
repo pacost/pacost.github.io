@@ -15,6 +15,9 @@ body {
     height: 100%;
 }
 
+.small-title{
+    letter-spacing: 7px;
+}
 
 /* Background images are set within the HTML using inline CSS, not here */
 
@@ -39,7 +42,7 @@ body {
     background-size: cover;
 }
 
-.approach{
+.fixed-bg-section{
     width: 100%;
     height: 100%;
     background-color:#252525;
@@ -49,7 +52,15 @@ body {
     padding-top: 0px;
 }
 
-.approach-heading{
+.approach-icon{
+    top: 27px;
+    left: 27px;
+    width: 57px;
+    height: 57px;
+    position: absolute;
+}
+
+.fixed-bg-section-heading{
     padding-top: 50px;
 }
 
@@ -58,7 +69,7 @@ body {
 }
 
 body{overflow-x:hidden;
-font-family:"Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif}
+font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif}
 .text-muted{color:#777}
 .text-primary{color:#c2db7b}
 p{font-size:14px;
@@ -67,7 +78,7 @@ p.large{font-size:16px}
 a,a:hover,a:focus,a:active,a.active{outline:0}
 a{color:#c2db7b}
 a:hover,a:focus,a:active,a.active{color:#A5BE60}
-h1,h2,h3,h4,h5,h6{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+h1,h2,h3,h4,h5,h6{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 text-transform:uppercase;
 font-weight:600}
 h1{font-size:50px}
@@ -77,7 +88,7 @@ h1{font-size:50px}
 .btn-primary{color:#fff;
 background-color:#c2db7b;
 border-color:#c2db7b;
-font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 text-transform:uppercase;
 font-weight:700}
 .btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary{color:#fff;
@@ -91,7 +102,7 @@ background-color:#fff}
 .btn-xl{color:#fff;
 background-color:#c2db7b;
 border-color:#c2db7b;
-font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 text-transform:uppercase;
 font-weight:700;
 border-radius:3px;
@@ -115,7 +126,7 @@ font-family:"Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive}
 border-color:#c2db7b}
 .navbar-default .navbar-toggle .icon-bar{background-color:#fff}
 .navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:#c2db7b}
-.navbar-default .nav li a{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+.navbar-default .nav li a{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 text-transform:uppercase;
 font-weight:400;
 letter-spacing:1px;
@@ -142,24 +153,17 @@ transition:all .3s}
 padding:10px 0}
 .navbar-default.navbar-shrink .navbar-brand{font-size:1.5em}
 }
-header{background-image:url(../img/header-bg.jpg);
-background-repeat:none;
-background-attachment:scroll;
-background-position:center center;
--webkit-background-size:cover;
--moz-background-size:cover;
-background-size:cover;
--o-background-size:cover;
+header{
 text-align:center;
 color:#fff}
 header .intro-text{padding-top:100px;
 padding-bottom:50px}
-header .intro-text .intro-lead-in{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+header .intro-text .intro-lead-in{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 font-style:italic;
 font-size:22px;
 line-height:22px;
 margin-bottom:25px}
-header .intro-text .intro-heading{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+header .intro-text .intro-heading{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 text-transform:uppercase;
 font-weight:700;
 font-size:50px;
@@ -167,12 +171,12 @@ line-height:50px;
 margin-bottom:25px}
 @media (min-width:768px){header .intro-text{padding-top:300px;
 padding-bottom:200px}
-header .intro-text .intro-lead-in{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+header .intro-text .intro-lead-in{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 font-style:italic;
 font-size:40px;
 line-height:40px;
 margin-bottom:25px}
-header .intro-text .intro-heading{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+header .intro-text .intro-heading{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 text-transform:uppercase;
 font-weight:700;
 font-size:75px;
@@ -184,12 +188,12 @@ section h2.section-heading{font-size:40px;
 margin-top:0;
 margin-bottom:15px}
 section h3.section-subheading{font-size:16px;
-font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 text-transform:none;
 font-style:italic;
 font-weight:400;
 margin-bottom:75px}
-@media (min-width:768px){section{padding:150px 0}
+@media (min-width:768px){section{padding:100px 0}
 }
 .service-heading{margin:15px 0;
 text-transform:none}
@@ -225,7 +229,7 @@ text-align:center;
 padding:25px}
 #portfolio .portfolio-item .portfolio-caption h4{text-transform:none;
 margin:0}
-#portfolio .portfolio-item .portfolio-caption p{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+#portfolio .portfolio-item .portfolio-caption p{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 font-style:italic;
 font-size:16px;
 margin:0}
@@ -330,17 +334,21 @@ margin-left:-85px}
 }
 .team-member{text-align:center;
 margin-bottom:50px}
-.team-member img{margin:0 auto;
-border:7px solid #fff}
+.team-member img{
+    margin:0 auto;
+    border:7px solid #fff;
+    max-width: 300px;
+}
 .team-member h4{margin-top:25px;
 margin-bottom:0;
 text-transform:none}
 .team-member p{margin-top:0}
 aside.clients img{margin:50px auto}
-section#contact{background-color:#222;
-background-image:url(../img/map-image.png);
-background-position:center;
-background-repeat:no-repeat}
+section#contact{
+    background-color:#fff;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 section#contact .section-heading{color:#fff}
 section#contact .form-group{margin-bottom:25px}
 section#contact .form-group input,section#contact .form-group textarea{padding:20px}
@@ -348,19 +356,19 @@ section#contact .form-group input.form-control{height:auto}
 section#contact .form-group textarea.form-control{height:236px}
 section#contact .form-control:focus{border-color:#c2db7b;
 box-shadow:none}
-section#contact ::-webkit-input-placeholder{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+section#contact ::-webkit-input-placeholder{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 text-transform:uppercase;
 font-weight:700;
 color:#bbb}
-section#contact :-moz-placeholder{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+section#contact :-moz-placeholder{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 text-transform:uppercase;
 font-weight:700;
 color:#bbb}
-section#contact ::-moz-placeholder{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+section#contact ::-moz-placeholder{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 text-transform:uppercase;
 font-weight:700;
 color:#bbb}
-section#contact :-ms-input-placeholder{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+section#contact :-ms-input-placeholder{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 text-transform:uppercase;
 font-weight:700;
 color:#bbb}
@@ -368,12 +376,12 @@ section#contact .text-danger{color:#e74c3c}
 footer{padding:25px 0;
 text-align:center}
 footer span.copyright{line-height:40px;
-font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 text-transform:uppercase;
 text-transform:none}
 footer ul.quicklinks{margin-bottom:0;
 line-height:40px;
-font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 text-transform:uppercase;
 text-transform:none}
 ul.social-buttons{margin-bottom:0}
@@ -403,7 +411,7 @@ text-align:center}
 font-size:3em}
 .portfolio-modal .modal-content p{margin-bottom:30px}
 .portfolio-modal .modal-content p.item-intro{margin:20px 0 30px;
-font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 font-style:italic;
 font-size:16px}
 .portfolio-modal .modal-content ul.list-inline{margin-bottom:30px;
