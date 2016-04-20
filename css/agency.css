@@ -389,15 +389,19 @@ section#blog{
     padding-top: 0px;
 }
 footer{
-    padding:0 0;
     background-color: #1f1f1f;
-    text-align:center;
-    color: #fff;
+    padding:20px 0;
 }
-footer span.copyright{line-height:40px;
-font-family:Montserrat,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-text-transform:uppercase;
-text-transform:none}
+footer p{
+    text-align:center;
+    line-height: 1.7em;
+    letter-spacing: 2px;
+    font-size: 10px;
+    font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform:uppercase;
+    text-transform:none;
+    color: #b3b3b1;
+}
 footer ul.quicklinks{margin-bottom:0;
 line-height:40px;
 font-family:Montserrat,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
