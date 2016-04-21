@@ -154,6 +154,14 @@ body {
 .carousel-control.left {
 }
 
+.approach2:before {
+  display: block;
+  content: " ";
+  margin-top: -285px;
+  height: 285px;
+  visibility: hidden;
+}
+
 @media(min-width: 868px) {
     .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
         margin-right: -12px;
