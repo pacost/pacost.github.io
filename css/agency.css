@@ -171,6 +171,14 @@ body {
     margin-right: -12px;
 }
 
+
+@media(min-width: 868px) {
+    h2{
+        font-size: 60px;
+    }
+}
+
+
 body{overflow-x:hidden;
 font-family:Montserrat,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif}
 .text-muted{color:#777}
